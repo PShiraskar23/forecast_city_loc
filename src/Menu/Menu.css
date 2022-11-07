@@ -1,0 +1,20 @@
+.menu>nav{
+ background-color: rgba(99, 141, 99, 0.6);
+height: 30px;
+line-height: 30px;
+margin-bottom: 10px;
+}
+.menu>nav>ul{
+    text-align: right;
+}
+.menu>nav>ul>li{
+
+    display: inline;
+    padding: 0 20px;
+}
+.menu>nav>ul>li>a{
+color: white;
+text-decoration: none;
+font-weight: 500;
+font-size: 18px;
+}
