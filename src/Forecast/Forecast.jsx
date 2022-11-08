@@ -41,26 +41,6 @@ function template() {
         </div>
             }
 
-        {/* {
-          !this.state.isShow ? null :
-           <div className="info_wrapper ">
-            {
-              !this.state.isError ?
-                <div>
-                  <h1 >{this.state.cityCountry} </h1>
-                  <h3>{this.state.date}</h3>
-                  <h3>{this.state.year}</h3>
-                  <h3 className="temp">{this.state.temp}&deg;C</h3>
-                  <h3>{this.state.minTemp}&deg;C / {this.state.maxTemp}&deg;C </h3>
-                  <h3>{this.state.weatherStatus}</h3>
-                </div> : null
-            }
-            {
-              this.state.isError && <h3 >{this.state.errMsg}</h3>
-            } */}
-        {/* </div> */}
-        {/* } */}
-
       </div>
 
     </div>

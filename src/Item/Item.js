@@ -1,8 +1,6 @@
 import React from "react";
 import template from "./Item.jsx";
 
-//API=https://api.opencagedata.com/geocode/v1/json?q=LAT+LNG&key=YOUR-API-KEY
-//key=546db18e3c6f4616a3c04b58a50dd8be
 
 class Item extends React.Component {
   constructor() {
@@ -53,7 +51,6 @@ class Item extends React.Component {
     this.getPos()
   }
   scb = (pos) => {
-    console.log("Success callback")
     let latitude = pos.coords.latitude
     let longitude = pos.coords.longitude
 
@@ -67,10 +64,7 @@ class Item extends React.Component {
           return res.json()
         })
         .then((res) => {
-
-          console.log(res)
-          console.log(res.results[0].components.city)
-      
+     
             this.setState({
               city: res.results[0].components.city,
               isShowGeoLoc:true
@@ -80,14 +74,12 @@ class Item extends React.Component {
 
         })
         .catch((err) => {
-          console.log(err)
+          alert(err)
         })
     }
 
   }
   ecb = (err) => {
-    console.log(err)
-    console.log(err.code)
     alert(err.message)
     this.setState({
       errMsg: err.message,
@@ -110,7 +102,7 @@ class Item extends React.Component {
         let minTemp = `${Math.floor(res.main.temp_min)}`
         let maxTemp = `${Math.ceil(res.main.temp_max)}`
         let temp = `${Math.round(res.main.temp)}`
-        console.log(res)
+
         
         this.setState({
           cityCountry: cityCountry,
@@ -123,12 +115,10 @@ class Item extends React.Component {
           isShow:true
         })
         
-        console.log("success")
         this.dateFunction()
 
       })
       .catch((err) => {
-        console.log("error"+err)
           this.setState({
             errMsg: `${err}`,
             isError: true,

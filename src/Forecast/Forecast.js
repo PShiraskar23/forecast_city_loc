@@ -36,7 +36,6 @@ class Forecast extends React.Component {
         let minTemp = `${Math.floor(res.main.temp_min)}`
         let maxTemp = `${Math.ceil(res.main.temp_max)}`
         let temp = `${Math.round(res.main.temp)}`
-        console.log(res)
         
         this.setState({
           cityCountry: cityCountry,
@@ -54,7 +53,6 @@ class Forecast extends React.Component {
 
       })
       .catch((err) => {
-        console.log("error"+err)
           this.setState({
             errMsg: `${err.message}`,
             isError: true,
