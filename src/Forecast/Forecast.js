@@ -48,7 +48,6 @@ class Forecast extends React.Component {
           isShow:true
         })
         
-        console.log("success")
         this.dateFunction()
 
       })

@@ -2,7 +2,7 @@ import "./Menu.css";
 import React from "react";
 import HomePage from "../HomePage";
 import Item from '../Item/index'
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function template() {
   return (
@@ -19,6 +19,7 @@ function template() {
             <Route path="/" element={<HomePage/>}/>
             <Route path="/home" element={<HomePage/>}/>
             <Route path="/forecast" element={<Item/>} />
+            <Route path="/*" element={<Navigate to ='home'/>} />
           </Routes>
       </HashRouter>
 
