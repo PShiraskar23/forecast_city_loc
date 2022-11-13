@@ -3,12 +3,14 @@ import React from "react";
 
 function template() {
   return (
-    <div className="search-by-geo-loc">
+    <div className="search-by-geo-loc ">
       <h3>Forecast Weather By Current Location</h3>
 
-      <div>
+       <div className="row">
+
+      <div className="col-sm-4 offset-4 ">
         {
-          !this.props.data.isShow ? null : <div className="info_wrapper ">
+          !this.props.data.isShow ? null : <div className="info_wrapper m-3">
             {
               !this.props.data.isError ?
                 <div>
@@ -26,7 +28,7 @@ function template() {
           </div>
         }
       </div>
-
+      </div>
     </div>
   );
 };

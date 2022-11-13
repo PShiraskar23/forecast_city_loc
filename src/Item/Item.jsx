@@ -6,9 +6,9 @@ import SearchByGeoLoc from '../SearchByGeoLoc/index'
 function template() {
   return (
     <div className="item">
-      <div className="btn_container">
-        <button className={this.state.isShowCity ? 'color-white' : 'color-blue'} onClick={this.fnSearchByCity}>Forecast Weather By City Name</button>
-        <button className={this.state.isShowLoc ? 'color-white' : 'color-blue'} onClick={this.fnSearchByLoc}>Forecast Weather By Current Location</button>
+      <div className="btn_container container-fluid ">
+        <button id={this.state.isShowCity ? 'color-white' : 'color-blue'} className="col-md-4 " onClick={this.fnSearchByCity}>Forecast Weather By City Name</button>
+        <button id={this.state.isShowLoc ? 'color-white' : 'color-blue'} className="col-md-4 " onClick={this.fnSearchByLoc}>Forecast Weather By Location</button>
       </div>
 
       {
