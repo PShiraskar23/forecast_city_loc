@@ -23,3 +23,28 @@
     font-size: 50px;
     font-weight: bold;
 }
+
+@media screen and (max-width:576px) {
+    .offset-4{
+        margin: 0;
+    }
+    .inputBox{
+        margin:0 25%;
+    }
+    .form_input{
+        width: 15rem;
+        
+
+    }
+}
+@media screen and (max-width:400px) {
+    .offset-4{
+        margin: 0;
+    }
+    .inputBox{
+        margin:0 25%;
+    }
+    .form_input{
+        width: 10rem;
+    }
+}

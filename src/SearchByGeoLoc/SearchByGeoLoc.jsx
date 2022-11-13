@@ -6,7 +6,7 @@ function template() {
     <div className="search-by-geo-loc ">
       <h3>Forecast Weather By Current Location</h3>
 
-       <div className="row">
+       <div className="row container-fluid">
 
       <div className="col-sm-4 offset-4 ">
         {

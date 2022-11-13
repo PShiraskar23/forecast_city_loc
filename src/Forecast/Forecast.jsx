@@ -14,7 +14,7 @@ function template() {
             <div className="search_bar">
               <form onSubmit={this.fnGetData}>
                 <div className="row ">
-                  <div className=" col-sm-4 offset-4">
+                  <div className="col-sm-4 offset-4">
                   <div className="inputBox text-start"><input type="text" placeholder="Enter City Name..." className="form-control form_input" onChange={(e) => { this.setState({ city: e.target.value }) }} /></div>
                   </div>
                 </div>
